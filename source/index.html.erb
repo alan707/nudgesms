@@ -1,15 +1,14 @@
 <section class="page-header">
   <h1 class="project-name"><%= data.project.name %></h1>
   <h2 class="project-tagline"><%= data.project.tagline %></h2>
-  <%= link_to "View on GitHub", data.project.repository_url, class: "btn" %>
-  <%= link_to "Contribute to the data", data.project.edit_url, class: "btn" %>
+  <%= link_to "Send Nudge", data.project.repository_url, class: "btn" %>
+  <%#= link_to "Contribute to the data", data.project.edit_url, class: "btn" %>
 </section>
 
 <section class="main-content">
   <h3><a id="welcome" class="anchor" href="#welcome" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to <%= data.project.name %></h3>
 
-  <p><%= data.project.name %> Helps massively reduce energy consumption by sending text messages to State of CA employees.  The text messages will contain a message that reads: "For the next hour conserve energy by turning off lights and electric consumers not in use"  
-  </p>
+  <p><%= data.project.name %> helps to massively reduce energy consumption by sending text messages to State of CA employees.  The text messages contain actionable energy conservation measures to do <strong>for 1 hour.</strong> 
 
  <!--  <section class="data-table">
     <%= partial "table" %>
