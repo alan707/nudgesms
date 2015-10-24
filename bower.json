@@ -1,6 +1,6 @@
 {
-  "name": "openprocure",
-  "description": "Open Source list of Public Agencies Procurement Thresholds",
+  "name": "budgesms",
+  "description": "Improve conservation and communictation through text messaging inside an agency",
   "version": "1.0.0",
   "dependencies": {
     "dynatable": "alfajango/jquery-dynatable#ce207ab5070bf6bf5482d9b4178b2b1b7cc88c98"
