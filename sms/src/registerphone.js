@@ -19,7 +19,7 @@ const registerPhone = function*(next){
   let regresult = yield this.knex('phones').insert({number: this.message.From, building: code});
   let name = sites[0].property_name || sites[0].location_address || sites[0].department_name || sites[0].department;
   
-  this.response.body = "Hey there! Thanks for registering with CA Energy Conservation program. You're registered at building  " + name;
+  this.response.body = "Hey there! Thanks for signing up to CA Energy Conservation program! You're registered at building  " + name;
   
   return;
 };
