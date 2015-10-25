@@ -1,9 +1,10 @@
 'use strict';
 const fetch = require('node-fetch');
-const registerPhone = function*(next){
+const askSMS = function*(next){
   if(this.slug !== 'newsms') return yield next;
   if(this.resolved === true) return yield next;
-  let match = this.message.Body.match(/[0-9]*/);
+  //get the first word
+  let match = this.message.Body.match(/\w*/);
   if(!match || !Array.isArray(match)) return yield next;
   if(!match[0]) return yield next;
   
@@ -20,10 +21,9 @@ const registerPhone = function*(next){
   let regresult = yield this.knex('phones').insert({number: this.message.From, building: code});
   let name = sites[0].property_name || sites[0].location_address || sites[0].department_name || sites[0].department;
   
-  this.response.body = "Hey there! Thanks for registering with CA Energy Conservation program. You're registered at building  " + name;
+  this.response.body = 'You will get energy-saving alerts for  ' + name;
   this.resolved = true;
-  
   return;
 };
 
-module.exports = registerPhone;
+module.exports = askSMS;
