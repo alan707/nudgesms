@@ -1,0 +1,27 @@
+{
+  "name": "nudgesms",
+  "version": "1.0.0",
+  "description": "Server to make inferences about building energy use and schedule SMS messages to subscribers.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node --es-staging src/postinstall.js",
+    "start": "node --es-staging src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "^4.2.1",
+    "npm": "2.14.7"
+  },
+  "author": "Brooks Newberry",
+  "license": "ISC",
+  "dependencies": {
+    "co": "^4.6.0",
+    "knex": "^0.8.6",
+    "koa": "^1.1.1",
+    "koa-body-parser": "^1.1.2",
+    "koa-mount": "^1.3.0",
+    "node-fetch": "^1.3.3",
+    "pg": "^4.4.3",
+    "twilio": "^2.5.1"
+  }
+}
