@@ -12,6 +12,7 @@ const nudgeSMS = function(c){
   app.use(bodyParser());
 
   app.use(function*(next) {
+    this.resolved = false;
     this.config = config;
     this.twilio = require('twilio');
     this.smsClient = this.twilio(config.twilioAccountSID, config.twilioAuthToken);
@@ -24,6 +25,7 @@ const nudgeSMS = function(c){
   //app.use(require('./buildingblast.js'));
   //app.use(require('./echosms.js'));
   app.use(require('./registerphone.js'));
+  app.use(require('./asksms.js'));
   app.use(require('./manualtrigger.js'));
   return app;
 };

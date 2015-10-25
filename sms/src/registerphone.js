@@ -2,9 +2,10 @@
 const fetch = require('node-fetch');
 const registerPhone = function*(next){
   if(this.slug !== 'newsms') return yield next;
+  if(this.resolved === true) return yield next;
   let match = this.message.Body.match(/[0-9]*/);
   if(!match || !Array.isArray(match)) return yield next;
-  if (!match[0]) return yield next;
+  if(!match[0]) return yield next;
   
   yield next;
   
@@ -19,7 +20,8 @@ const registerPhone = function*(next){
   let regresult = yield this.knex('phones').insert({number: this.message.From, building: code});
   let name = sites[0].property_name || sites[0].location_address || sites[0].department_name || sites[0].department;
   
-  this.response.body = "Hey there! Thanks for signing up to CA Energy Conservation program! You're registered at building  " + name;
+  this.response.body = "Hey there! Thanks for registering with CA Energy Conservation program. You're registered at building  " + name;
+  this.resolved = true;
   
   return;
 };
