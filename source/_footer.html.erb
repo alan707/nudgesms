@@ -1,9 +1,7 @@
 <footer class="site-footer">
  <!--  <%= partial "social_buttons" %> -->
   <span class="site-footer-owner"><%= link_to data.project.name, data.project.repository_url %> was
-    created by <a href="https://www.munirent.co">MuniRent</a> and maintained by many contributors
-    including:
-    <%= data.contributors.map { |contributor| link_to contributor.name, contributor.url }.join(", ") %>
+    created by:<%= data.contributors.map { |contributor| link_to contributor.name, contributor.url }.join(", ") %>
   </span>
 
   <%= partial "license" %>

@@ -48,7 +48,7 @@ $(document).ready(function() {
       paginate: false
     },
     params: {
-      records: "agencies"
+      records: "buildings"
     },
     table: {
       copyHeaderAlignment: false,
