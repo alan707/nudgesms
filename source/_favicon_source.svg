@@ -1,1 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><g><path fill="#000000" d="M79.966,63.285H29.506c-1.888,0-3.519-1.32-3.912-3.167l-7.722-36.271l-7.251-0.537   c-2.203-0.164-3.857-2.082-3.694-4.285c0.163-2.204,2.091-3.857,4.285-3.694l10.244,0.759c1.773,0.131,3.247,1.417,3.617,3.156   l7.673,36.039h43.991l5.771-26.794c0.464-2.16,2.6-3.537,4.752-3.068c2.16,0.465,3.533,2.593,3.068,4.752l-6.45,29.951   C83.479,61.97,81.851,63.285,79.966,63.285z"></path></g><circle fill="#000000" cx="38.232" cy="76.379" r="7.967"></circle><circle fill="#000000" cx="71.873" cy="76.379" r="7.967"></circle><g><path fill="#000000" d="M73.326,37.766H36.146c-2.209,0-4-1.791-4-4s1.791-4,4-4h37.181c2.209,0,4,1.791,4,4   S75.535,37.766,73.326,37.766z"></path></g><g><path fill="#000000" d="M70.671,50.406h-31.87c-2.209,0-4-1.791-4-4s1.791-4,4-4h31.87c2.209,0,4,1.791,4,4   S72.88,50.406,70.671,50.406z"></path></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="100%"
+   height="100%"
+   viewBox="0 0 100 68.75"
+   id="svg3004"
+   xml:space="preserve"><metadata
+     id="metadata3016"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs3014" /><path
+     d="m 81,14 h 19 V 8 H 81 V 0 C 81,0 66,0 58,0 50.181,0 44.958,7.233 42.034,13 H 27 C 13.121,13 0,26.121 0,40 V 55 H 14 V 40 c 0,-6.075 6.925,-13 13,-13 h 15.034 c 2.924,5.767 8.147,13 15.966,13 8,0 23,0 23,0 v -8 h 19 V 26 H 81 V 14 z"
+     id="path3006" /></svg>
